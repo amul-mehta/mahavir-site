@@ -28,6 +28,10 @@ html, body{
 @font-face {font-family: 'Inconsolata-Regular';
 	src: url(../fonts/Inconsolata-Regular.ttf)format('truetype');
 }
+@font-face {
+    font-family: 'Enigma';
+    src: url(../fonts/Gidole-Regular.otf)format('truetype');
+}
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -53,15 +57,17 @@ p.location {
         padding-top: 7px;
 }
 .social-icons {
+  top: 2em;
   padding: 0;
   float: right;
+  height: 3em;
 }
 .banner-top {
-  padding: 1.4em 0;
-}
-.social-icons i {
-    width: 28px;
-    height: 28px;
+  /*  padding: 1.4em 0;*/
+ }
+.social-icons img {
+    width: 3.5em;
+    height: auto;
     background: url('../images/img-sprite.png') no-repeat 0px 0px;
     display: inline-block;
 }
@@ -92,6 +98,7 @@ a i.vimeo:hover {
 .logo {
     text-align: center;
     position: absolute;
+
     bottom: 10px;
     left: 10em;
 }
@@ -99,7 +106,7 @@ a i.vimeo:hover {
     text-decoration: none;
 }
 .logo a h1 {
-    font-family: 'Inconsolata-Regular';
+    font-family: 'Enigma';
     font-size: 3.5em;
     color: #000099;
     margin: 0;
@@ -1533,8 +1540,17 @@ width: 100%;
 /*----responsive-menu-start--*/
 @media(max-width:1440px){
 	.logo {
-	    left: 30.5em;
-	}
+  left: 35em;
+      bottom: 1.5em;
+      z-index: 999;
+  }
+  img.header-logo{
+  height:6.5em;
+  width: auto;
+  /*padding-bottom: 1em;*/
+  margin-top: -1.2em; 
+  margin-left:2.5em;
+}
 	.testimonials-text {
 	    padding-left: 9em;
 	}
@@ -1564,10 +1580,15 @@ width: 100%;
 	.banner5 {
 	    min-height: 100px;
 	}
+  .logo {
+  left: 32em;
+      bottom: 1.5em;
+      z-index: 999;
+  }
 }
 @media(max-width:1280px){
 	.logo {
-	    left: 29.5em;
+	    left: 28.5em;
 	}
 	.banner {
 	    min-height: 630px;
@@ -1591,7 +1612,7 @@ width: 100%;
 	    font-size: 3em;
 	}
 	.logo {
-	    left: 20.5em;
+	    left: 24em;
 	}
 	h2.main-heading:before {
 	    left: 3.5em;
@@ -1675,7 +1696,7 @@ width: 100%;
 	    min-height: 535px;
 	}
 	.logo {
-	    left: 20.5em;
+	    left: 23em;
 	}
 	.banner5 {
 	    min-height: 80px;
@@ -1719,6 +1740,7 @@ width: 100%;
 	}
 	.logo {
 	    bottom: 16px;
+      left: 22em;
 	}
 	.navbar-nav > li {
 	    float: none;
@@ -1960,7 +1982,7 @@ width: 100%;
    		 font-size: 13px;
     }
 	.logo {
-	    left: 15em;
+	    left: 19em;
 	}
 	.md-in {
 	    width: 50%;
@@ -2053,9 +2075,6 @@ width: 100%;
 	.nav > li > a {
 	    padding: 10px 19px !important;
 	}
-	.logo {
-	    left: 12em;
-	}
 	.navigation {
 	    margin-bottom: .3em;
 	}
@@ -2066,8 +2085,8 @@ width: 100%;
 	    padding: 1.4em 0 .2em;
 	}
 	.logo {
-	    left: 4em;
-	    bottom: 0px;
+	    left: 12em;
+	    bottom: 1em;
 	}
 	h2.main-heading:before {
 	    left: 0.5em;
@@ -2207,8 +2226,8 @@ width: 100%;
 	           font-size: 2.3em;
 	}
 	.logo {
-	    left: 5em;
-	    bottom: -2.5em;
+	    left: 8.2em;
+	    bottom:  1em;
 	    z-index: 999;
 	}
 	h2.main-heading {
@@ -2293,7 +2312,7 @@ width: 100%;
 	    width: 75%;
 	}
 	.navbar-toggle {
-	    margin-top: 46px;
+	    margin-top: 10px;
 	}
 	.recent-posts-text {
 	    padding: 1em 0 1.2em;
@@ -2383,10 +2402,17 @@ width: 100%;
 	           font-size: 2.3em;
 	}
 	.logo {
-	    left: 4em;
-	    bottom: -2.5em;
+	    left: 5.8em;
+	    bottom: 1em;
 	    z-index: 999;
 	}
+  img.header-logo{
+  height:5em;
+  width: auto;
+  margin-top:-1em;
+  margin-left:1em;
+}
+
 	h2.main-heading {
 	    font-size: 2em;
 	}
@@ -2469,7 +2495,7 @@ width: 100%;
 	    width: 75%;
 	}
 	.navbar-toggle {
-	    margin-top: 46px;
+	    margin-top: 10px;
 	}
 	.recent-posts-text {
 	    padding: 1em 0 1.2em;
@@ -2559,7 +2585,7 @@ width: 100%;
 	           font-size: 2.3em;
 	}
 	.logo {
-    left: 3em;
+    left: 3.5em;
     bottom: -2.5em;
     z-index: 999;
 	}
@@ -2735,10 +2761,16 @@ width: 100%;
 	           font-size: 2.3em;
 	}
 	.logo {
-	left: 2em;
-	    bottom: -2.5em;
+	left: 4em;
+	    bottom: -1em;
 	    z-index: 999;
 	}
+  img.header-logo{
+  height:3.5em;
+  width: auto;
+  margin-bottom:-1.2em;
+  margin-left:1em;
+}
 	h2.main-heading {
 	    font-size: 2em;
 	}
@@ -2920,11 +2952,22 @@ width: 100%;
 	    margin-top: 40px;
 	    margin-bottom: 0px;
 	}
+  .logo a h1 {
+      font-size: 1.9em;
+  }
 	.logo {
-	    left: 1em;
-	    bottom: -2.5em;
+	    left: 3.2em;
+	    bottom: -0.8em;
+      right: 1em;
 	    z-index: 999;
 	}
+  img.header-logo{
+  height:3.2em;
+  width: auto;
+  margin-bottom:-1.2em;
+  margin-left:0.6em;
+}
+  
 	.grid li {
 	    width: 270px;
 	}
