@@ -110,6 +110,7 @@ a i.vimeo:hover {
     font-size: 3.5em;
     color: #000099;
     margin: 0;
+    white-space: nowrap;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
