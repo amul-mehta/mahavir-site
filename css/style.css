@@ -637,7 +637,7 @@ i.glyphicon.glyphicon-map-marker {
     font-size: 35px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
 }
 .tem-g {
     width: 95%;
@@ -1451,6 +1451,8 @@ h3.tittle {
    overflow: hidden;
    position: relative;
    text-align: center;
+   display: table-cell;
+vertical-align: middle; 
    cursor: default;
 }
 .view .mask, .view .content {
@@ -1463,7 +1465,11 @@ h3.tittle {
 }
 .view img {
    display: block;
-   position: relative;
+
+   /*position: relative;*/
+   width: 160%;
+   height: auto;
+
 }
 .view a.info {
 	    font-family: 'Inconsolata-Regular';
